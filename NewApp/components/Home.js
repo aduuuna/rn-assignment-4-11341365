@@ -69,7 +69,7 @@ const Home = ({
         </View>
         <View style={styles.featuredJobCardContainer}>
           <ScrollView horizontal={true} style={styles.scroll}>
-            <View style={[styles.featuredJobcards, { backgroundColor1 }]}>
+            <View style={styles.featuredJobcard1}>
               <View style={styles.featuredJobminiCard}>
                 <View style={styles.featuredJobLogoPositionCompanyName}>
                   <View style={styles.featuredJobLogo}>
@@ -82,16 +82,116 @@ const Home = ({
                   </View>
                   <View style={styles.featuredJobPositionCompanyName}>
                     <Text style={styles.featuredJobPosition}>
-                      {jobPosition1}
+                      Software Engineer
+                    </Text>
+                    <Text style={styles.featuredJobCompanyName}>Facebook</Text>
+                  </View>
+                </View>
+                <View style={styles.featuredJobSalaryLocation}>
+                  <Text style={styles.featuredJobSalary}>$190,000</Text>
+                  <Text style={styles.featuredJobLocation}>Texas, US</Text>
+                </View>
+              </View>
+            </View>
+
+            <View style={styles.featuredJobcard3}>
+              <View style={styles.featuredJobminiCard}>
+                <View style={styles.featuredJobLogoPositionCompanyName}>
+                  <View style={styles.featuredJobLogo}>
+                    <View style={styles.IconBackground}>
+                      <Image
+                        style={styles.Icon}
+                        source={require("../assets/lilTikTok.png")}
+                      />
+                    </View>
+                  </View>
+                  <View style={styles.featuredJobPositionCompanyName}>
+                    <Text style={styles.featuredJobPosition}>
+                      Software Engineer
+                    </Text>
+                    <Text style={styles.featuredJobCompanyName}>TikTok</Text>
+                  </View>
+                </View>
+                <View style={styles.featuredJobSalaryLocation}>
+                  <Text style={styles.featuredJobSalary}>$108,000</Text>
+                  <Text style={styles.featuredJobLocation}>Chicago, US</Text>
+                </View>
+              </View>
+            </View>
+            <View style={styles.featuredJobcard4}>
+              <View style={styles.featuredJobminiCard}>
+                <View style={styles.featuredJobLogoPositionCompanyName}>
+                  <View style={styles.featuredJobLogo}>
+                    <View style={styles.IconBackground}>
+                      <Image
+                        style={styles.Icon}
+                        source={require("../assets/lilAws.png")}
+                      />
+                    </View>
+                  </View>
+                  <View style={styles.featuredJobPositionCompanyName}>
+                    <Text style={styles.featuredJobPosition}>
+                      Database Engineer
                     </Text>
                     <Text style={styles.featuredJobCompanyName}>
-                      {companyName1}
+                      Amazon Web Services
                     </Text>
                   </View>
                 </View>
                 <View style={styles.featuredJobSalaryLocation}>
-                  <Text style={styles.featuredJobSalary}>{salary1}</Text>
-                  <Text style={styles.featuredJobLocation}>{location1}</Text>
+                  <Text style={styles.featuredJobSalary}>$900,900</Text>
+                  <Text style={styles.featuredJobLocation}>
+                    Toronto, Canada
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View style={styles.featuredJobcard5}>
+              <View style={styles.featuredJobminiCard}>
+                <View style={styles.featuredJobLogoPositionCompanyName}>
+                  <View style={styles.featuredJobLogo}>
+                    <View style={styles.IconBackground}>
+                      <Image
+                        style={styles.Icon}
+                        source={require("../assets/lilMicrosoft.png")}
+                      />
+                    </View>
+                  </View>
+                  <View style={styles.featuredJobPositionCompanyName}>
+                    <Text style={styles.featuredJobPosition}>
+                      Security Engineer
+                    </Text>
+                    <Text style={styles.featuredJobCompanyName}>Microsoft</Text>
+                  </View>
+                </View>
+                <View style={styles.featuredJobSalaryLocation}>
+                  <Text style={styles.featuredJobSalary}>$708,200</Text>
+                  <Text style={styles.featuredJobLocation}>California, US</Text>
+                </View>
+              </View>
+            </View>
+            <View style={styles.featuredJobcard2}>
+              <View style={styles.featuredJobminiCard}>
+                <View style={styles.featuredJobLogoPositionCompanyName}>
+                  <View style={styles.featuredJobLogo}>
+                    <View style={styles.IconBackground}>
+                      <Image
+                        style={styles.Icon}
+                        source={require("../assets/lilGoogle.png")}
+                      />
+                    </View>
+                  </View>
+
+                  <View style={styles.featuredJobPositionCompanyName}>
+                    <Text style={styles.featuredJobPosition}>
+                      DevOps Engineer
+                    </Text>
+                    <Text style={styles.featuredJobCompanyName}>Google</Text>
+                  </View>
+                </View>
+                <View style={styles.featuredJobSalaryLocation}>
+                  <Text style={styles.featuredJobSalary}>$290,000</Text>
+                  <Text style={styles.featuredJobLocation}>Florida, US</Text>
                 </View>
               </View>
             </View>
@@ -105,7 +205,91 @@ const Home = ({
         </View>
         <View style={styles.popularJobsCardContainer}>
           <ScrollView>
-            <View style={[styles.popularJobcards, { backgroundColor2 }]}>
+            <View style={styles.popularJobcards}>
+              <View style={styles.popularJobsCardLogoContainer}>
+                <View style={styles.IconBackground}>
+                  <Image
+                    style={styles.Icon}
+                    source={require("../assets/lilBurger.png")}
+                  />
+                </View>
+              </View>
+              <View style={styles.popularJobsPositionCompanyNameContainer}>
+                <Text style={styles.popularJobsPosition}>Jr Executive</Text>
+                <Text style={styles.popularJobsCompanyName}>Burger King</Text>
+              </View>
+              <View style={styles.popularJobsCardSalaryLocationContainer}>
+                <Text style={styles.popularJobsSalary}>$198,00/y</Text>
+                <Text style={styles.popularJobsCompanyLocation}>
+                  Tokyo, Japan
+                </Text>
+              </View>
+            </View>
+            <View style={styles.popularJobcards}>
+              <View style={styles.popularJobsCardLogoContainer}>
+                <View style={styles.IconBackground}>
+                  <Image
+                    style={styles.Icon}
+                    source={require("../assets/lilBeats.png")}
+                  />
+                </View>
+              </View>
+              <View style={styles.popularJobsPositionCompanyNameContainer}>
+                <Text style={styles.popularJobsPosition}>Product Manager</Text>
+                <Text style={styles.popularJobsCompanyName}>Beats</Text>
+              </View>
+              <View style={styles.popularJobsCardSalaryLocationContainer}>
+                <Text style={styles.popularJobsSalary}>$149,000/y</Text>
+                <Text style={styles.popularJobsCompanyLocation}>
+                  Florida, US
+                </Text>
+              </View>
+            </View>
+            <View style={styles.popularJobcards}>
+              <View style={styles.popularJobsCardLogoContainer}>
+                <View style={styles.IconBackground}>
+                  <Image
+                    style={styles.Icon}
+                    source={require("../assets/LilFacebook.png")}
+                  />
+                </View>
+              </View>
+              <View style={styles.popularJobsPositionCompanyNameContainer}>
+                <Text style={styles.popularJobsPosition}>Product Manager</Text>
+                <Text style={styles.popularJobsCompanyName}>Facebook</Text>
+              </View>
+              <View style={styles.popularJobsCardSalaryLocationContainer}>
+                <Text style={styles.popularJobsSalary}>$290,000/y</Text>
+                <Text style={styles.popularJobsCompanyLocation}>
+                  Florida, US
+                </Text>
+              </View>
+            </View>
+            <View style={styles.popularJobcards}>
+              <View style={styles.popularJobsCardLogoContainer}>
+                <View style={styles.IconBackground}>
+                  <Image
+                    style={styles.Icon}
+                    source={require("../assets/lilAws.png")}
+                  />
+                </View>
+              </View>
+              <View style={styles.popularJobsPositionCompanyNameContainer}>
+                <Text style={styles.popularJobsPosition}>
+                  Solutions Architect
+                </Text>
+                <Text style={styles.popularJobsCompanyName}>
+                  Amazon Web Services
+                </Text>
+              </View>
+              <View style={styles.popularJobsCardSalaryLocationContainer}>
+                <Text style={styles.popularJobsSalary}>$700,000/y</Text>
+                <Text style={styles.popularJobsCompanyLocation}>
+                  Cape Town, Africa
+                </Text>
+              </View>
+            </View>
+            <View style={styles.popularJobcards}>
               <View style={styles.popularJobsCardLogoContainer}>
                 <View style={styles.IconBackground}>
                   <Image
@@ -115,22 +299,62 @@ const Home = ({
                 </View>
               </View>
               <View style={styles.popularJobsPositionCompanyNameContainer}>
-                <Text style={styles.popularJobsPosition}>{jobPosition2}</Text>
-                <Text style={styles.popularJobsCompanyName}>
-                  {companyName2}
+                <Text style={styles.popularJobsPosition}>
+                  Software Engineer
                 </Text>
+                <Text style={styles.popularJobsCompanyName}>Google</Text>
               </View>
               <View style={styles.popularJobsCardSalaryLocationContainer}>
-                <Text style={styles.popularJobsSalary}>{salary2}</Text>
+                <Text style={styles.popularJobsSalary}>$800,000/y</Text>
                 <Text style={styles.popularJobsCompanyLocation}>
-                  {location2}
+                  Tokyo, Japan
                 </Text>
               </View>
             </View>
-            <View style={styles.popularJobcards}></View>
-            <View style={styles.popularJobcards}></View>
-            <View style={styles.popularJobcards}></View>
-            <View style={styles.popularJobcards}></View>
+            <View style={styles.popularJobcards}>
+              <View style={styles.popularJobsCardLogoContainer}>
+                <View style={styles.IconBackground}>
+                  <Image
+                    style={styles.Icon}
+                    source={require("../assets/lilTikTok.png")}
+                  />
+                </View>
+              </View>
+              <View style={styles.popularJobsPositionCompanyNameContainer}>
+                <Text style={styles.popularJobsPosition}>
+                  Infrastructure Engineer
+                </Text>
+                <Text style={styles.popularJobsCompanyName}>TikTok</Text>
+              </View>
+              <View style={styles.popularJobsCardSalaryLocationContainer}>
+                <Text style={styles.popularJobsSalary}>$990,000/y</Text>
+                <Text style={styles.popularJobsCompanyLocation}>
+                  London, UK
+                </Text>
+              </View>
+            </View>
+            <View style={styles.popularJobcards}>
+              <View style={styles.popularJobsCardLogoContainer}>
+                <View style={styles.IconBackground}>
+                  <Image
+                    style={styles.Icon}
+                    source={require("../assets/lilMicrosoft.png")}
+                  />
+                </View>
+              </View>
+              <View style={styles.popularJobsPositionCompanyNameContainer}>
+                <Text style={styles.popularJobsPosition}>
+                  Solutions Architect
+                </Text>
+                <Text style={styles.popularJobsCompanyName}>Microsoft</Text>
+              </View>
+              <View style={styles.popularJobsCardSalaryLocationContainer}>
+                <Text style={styles.popularJobsSalary}>$900,000/y</Text>
+                <Text style={styles.popularJobsCompanyLocation}>
+                  Zurich, Switzerland
+                </Text>
+              </View>
+            </View>
           </ScrollView>
         </View>
       </View>
@@ -153,8 +377,6 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     height: 55,
     width: "100%",
-    borderWidth: 1,
-    borderColor: "black",
     paddingTop: 2,
     paddingBottom: 2,
   },
@@ -163,8 +385,6 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     justifyContent: "space-evenly",
     width: "78%",
-    borderWidth: 1,
-    borderColor: "black",
   },
   Text1: {
     fontSize: 22,
@@ -182,8 +402,6 @@ const styles = StyleSheet.create({
     width: "18%",
     alignItems: "center",
     justifyContent: "center",
-    borderWidth: 1,
-    borderColor: "black",
   },
   HumanProfile: {
     height: 40,
@@ -191,8 +409,6 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     position: "fixed",
     top: 5,
-    borderWidth: 1,
-    borderColor: "black",
   },
   Redpoint: {
     width: 10,
@@ -208,8 +424,7 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
-    borderWidth: 1,
-    borderColor: "black",
+
     height: 55,
     width: "100%",
     marginTop: 30,
@@ -218,21 +433,15 @@ const styles = StyleSheet.create({
   },
   searchContainerA: {
     width: "78%",
-    borderWidth: 2,
-    borderColor: "black",
   },
   searchContainerB: {
     width: "18%",
-    borderWidth: 2,
-    borderColor: "black",
+
     alignItems: "center",
     justifyContent: "center",
   },
   searchInput: {
     fontSize: 15,
-    borderWidth: 1,
-    borderColor: "black",
-
     borderRadius: 17,
     backgroundColor: "#F2F2F3",
     paddingLeft: 40,
@@ -254,8 +463,6 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
-    borderWidth: 1,
-    borderColor: "black",
     height: 280,
     width: "100%",
     marginTop: 30,
@@ -268,8 +475,6 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
-    borderWidth: 1,
-    borderColor: "black",
     height: 30,
     width: "99%",
     paddingTop: 2,
@@ -289,8 +494,6 @@ const styles = StyleSheet.create({
   featuredJobCardContainer: {
     display: "flex",
     flexDirection: "row",
-    borderWidth: 1,
-    borderColor: "black",
     height: 240,
     width: "99%",
     paddingTop: 2,
@@ -301,17 +504,16 @@ const styles = StyleSheet.create({
   scroll: {
     flexDirection: "row",
   },
-  featuredJobcards: {
+  featuredJobcard1: {
     width: 280,
     height: 200,
-    borderWidth: 1,
-    borderColor: "black",
     marginRight: 10,
     alignSelf: "center",
     borderRadius: 10,
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
+    backgroundColor: "#1877F2",
   },
 
   featuredJobcard2: {
@@ -365,14 +567,10 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
-    borderWidth: 3,
-    borderColor: "black",
   },
   featuredJobLogoPositionCompanyName: {
     width: "100%",
     height: 60,
-    borderWidth: 1,
-    borderColor: "black",
     justifyContent: "space-between",
     alignItems: "center",
     flexDirection: "row",
@@ -381,8 +579,7 @@ const styles = StyleSheet.create({
   },
   featuredJobLogo: {
     width: "23%",
-    borderWidth: 1,
-    borderColor: "black",
+
     height: "100%",
     alignItems: "center",
     justifyContent: "center",
@@ -395,13 +592,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     borderRadius: 10,
-    borderWidth: 1,
-    borderColor: "black",
   },
   featuredJobPositionCompanyName: {
     width: "74%",
-    borderWidth: 1,
-    borderColor: "black",
+
     height: "100%",
     flexDirection: "column",
     justifyContent: "space-evenly",
@@ -410,8 +604,7 @@ const styles = StyleSheet.create({
   featuredJobSalaryLocation: {
     width: "100%",
     height: 40,
-    borderWidth: 1,
-    borderColor: "black",
+
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
@@ -447,20 +640,19 @@ const styles = StyleSheet.create({
     dispaly: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
-    borderWidth: 1,
-    borderColor: "black",
+
     height: 280,
     width: "100%",
     marginTop: 30,
     paddingTop: 2,
     paddingBottom: 2,
     alignItems: "center",
+    marginBottom: 20,
   },
   popularJobsCardContainer: {
     display: "flex",
     flexDirection: "column",
-    borderWidth: 1,
-    borderColor: "pink",
+
     height: 240,
     width: "100%",
     paddingTop: 2,
@@ -469,31 +661,26 @@ const styles = StyleSheet.create({
   },
   popularJobcards: {
     width: "100%",
-    borderWidth: 1,
-    borderColor: "blue",
     height: 65,
-
-    marginBottom: 15,
+    backgroundColor: "white",
+    marginBottom: 10,
     alignItems: "center",
     justifyContent: "space-between",
     padding: 1,
     flexDirection: "row",
+    borderRadius: 20,
   },
   popularJobsCardLogoContainer: {
     width: 60,
-    borderWidth: 1,
-    borderColor: "black",
     height: "100%",
     alignItems: "center",
     justifyContent: "center",
     padding: 6,
   },
   popularJobsPositionCompanyNameContainer: {
-    backgroundColor: "yellowgreen",
     width: 140,
     height: "100%",
-    borderWidth: 1,
-    borderBlockColor: "balck",
+
     justifyContent: "space-evenly",
     flexDirection: "column",
   },
@@ -511,11 +698,8 @@ const styles = StyleSheet.create({
     textAlign: "left",
   },
   popularJobsCardSalaryLocationContainer: {
-    backgroundColor: "purple",
     width: 100,
     height: "100%",
-    borderWidth: 1,
-    borderBlockColor: "balck",
     justifyContent: "space-evenly",
     flexDirection: "column",
   },

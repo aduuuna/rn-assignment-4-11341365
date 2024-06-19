@@ -2,7 +2,7 @@ import React from "react";
 import { View, StyleSheet, TouchableOpacity, Text } from "react-native";
 import { FontAwesome, FontAwesome5 } from "@expo/vector-icons";
 
-const Frame = ({ navigation }) => {
+const Frame = () => {
   return (
     <View style={styles.container}>
       <TouchableOpacity onPress={() => navigation.navigate("Login")}>
